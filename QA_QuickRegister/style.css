@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    background-color: #000000;
+    font-family: 'Montserrat';
+}
+
+.header {
+    text-align: center;
+    transition: 1s;
+    letter-spacing: 2px;
+}
+
+.header p {
+    color: rgb(150, 150, 150);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(113, 134, 151);
+    width: 200pt;
+    height: 100pt;
+    margin: 15pt;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: rgb(156, 179, 199);
+    filter:drop-shadow(0px 0px 15px #4a7c85);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:active {
+    background-color: rgb(100, 104, 107);
+    transition: 0.1s;
+}
+
+.smlBtn , .actionBtn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 200pt;
+    height: 50pt;
+    margin: 8pt;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.smlBtn:hover , .actionBtn:hover{
+    background-color: rgb(0, 204, 255);
+    filter:drop-shadow(0px 0px 15px #8f8f8f);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.smlBtn:active , .actionBtn:active {
+    background-color:rgb(94, 223, 255);
+    transition: 0.1s;
+}
+
+
+.btn img {
+    width: 130pt;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.instructions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(49, 49, 49);
+    color: #ffffff;
+    border-radius: 5px;
+    min-width: 200pt;
+    transition: 1s;
+}
+
+.check {
+    margin-left: 8px;
+    height: 15px;
+    width: 15px;
+    transition: 1s;
+}
+
+select {
+    background-color: rgb(49, 49, 49);
+    color: #ffffff;
+    width: 150pt;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+.pickList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(113, 134, 151);
+    width: 200pt;
+    height: 100pt;
+    margin: 15pt;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+}
+
+.response {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    width: 500pt; 
+    margin: 15pt;
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+    padding: 15px;
+}
+
+.code {
+    text-align: left;
+    background-color: rgb(48 48 48);
+    color: rgb(0, 204, 255);
+    width: 480pt;
+    padding: 10px;
+    transition: 0.3s ease-in;
+    text-size-adjust: 100%;
+    word-wrap: break-word;
+    font-size: 12px;
+}
+
+#loading {
+    margin-top: 30pt;
+    height: 50px;
+    width: 50px;
+}
+@media (max-width: 600px) {
+    .btnContainer {
+        flex-direction: column;
+    }
+}

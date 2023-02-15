@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bnology Services</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/512/support.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Bnology Services</h2>
+            <p>Registration Tool</p>
+        </div>
+        <div class="btnContainer">
+            <div class="btn" id="alvexo">
+                <img id="alvexo" src="https://www.alvexo.com/assets/images/components/header/logo_white.svg">
+            </div>
+            <div class="btn" id="ogm">
+                <img id="ogm" src="https://www.ogm.market/assets/images/components/header/OGM-headerLogo.svg">
+            </div>
+            <div class="btn" id="efinno">
+                <img id="efinno" src="https://www.efinno.com/assets/images/components/header/efinno_logo.svg">
+            </div>
+        </div>
+        <div class="pickList" style="display: none;" id="langsDiv">
+            <label for="lang">Choose Language (BU)</labe></br>
+                <select name="langs" id="langs">
+                    <option class="languages" value="null"></option>
+                    <option class="languages" value="fr">French</option>
+                    <option class="languages" value="de">German</option>
+                    <option class="languages" value="en">English</option>
+                    <option class="languages" value="ar">Arabic</option>
+                </select>
+        </div>
+        <div class="pickList" style="display: none;" id="methodsDiv">
+            <label for="method">Choose Method</labe></br>
+                <select name="method" id="method">
+                    <option value="null"></option>
+                    <option value="affiliation">Affiliation</option>
+                    <option value="organic">Organic (Sign-Up)</option>
+                </select>
+        </div>
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+                <li id="step1">Choose Brand<img class="check"
+                        src="https://cdn-icons-png.flaticon.com/512/190/190411.png" style="visibility:hidden;"></li>
+                <li id="step2">Choose Language (BU)<img class="check"
+                        src="https://cdn-icons-png.flaticon.com/512/190/190411.png" style="visibility:hidden;"></li>
+                <li id="step3">Choose Method<img class="check"
+                        src="https://cdn-icons-png.flaticon.com/512/190/190411.png" style="visibility:hidden;"></li>
+            </ol>
+        </div>
+        <div><img id="loading" src="https://media.tenor.com/5o2p0tH5LFQAAAAi/hug.gif" style="display: none;"></div>
+        <div class="response" style="display: none;" id="responseDiv">
+            <h3 id="status">Lead Created<img class="check" src="https://cdn-icons-png.flaticon.com/512/190/190411.png"></h3>
+            <p id="userEmail" class="code"></p>
+            <p id="userPassword" class="code"></p>
+            <p>API Request</p>
+            <code class="code" id="requestBox"></code>
+            <p>API Response</p>
+            <code class="code" id="responseBox"></code>
+            <div class="smlBtn" id="expand">
+                <p>Take Additional Steps</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

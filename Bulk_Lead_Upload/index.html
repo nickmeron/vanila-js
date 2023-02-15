@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Lead</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/512/support.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Bnology Services</h2>
+            <p>Bulk Upload Leads</p>
+            <a href="https://bnologydev.atlassian.net/wiki/spaces/KNOW/pages/2044985372/Upload+Leads" style="color: rgb(0, 174, 255); font-size: 12px;">Instructions Guide Here</a>
+        </div>
+        <div class="btnContainer">
+            <div class="btn" id="alvexo">
+                <img id="alvexo" src="https://www.alvexo.com/assets/images/components/header/logo_white.svg">
+            </div>
+            <div class="btn" id="ogm">
+                <img id="ogm" src="https://www.ogm.market/assets/images/components/header/OGM-headerLogo.svg">
+            </div>
+            <div class="btn" id="efinno">
+                <img id="efinno" src="https://www.efinno.com/assets/images/components/header/efinno_logo.svg">
+            </div>
+        </div>
+        <div class="container">
+            <p>Enter Campaign ID</p>
+            <input type="text" id="campaignId">
+            <p>Enter Campaign Token</p>
+            <input type="text" id="token">
+            <p>Upload CSV table</p>
+            <input type="file" id="fileInput" accept=".csv">
+            <div class="smlBtn" id="uploadbtn" style="display: none;">Upload Leads</div>
+        </div>
+    </div>
+</body>
+
+</html>

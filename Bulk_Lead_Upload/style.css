@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    background-color: #000000;
+    font-family: 'Montserrat';
+}
+
+.header {
+    text-align: center;
+    transition: 1s;
+    letter-spacing: 2px;
+}
+
+.header p {
+    color: rgb(150, 150, 150);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffff;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    width: 200pt;
+    height: 100pt;
+    margin: 15pt;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: rgb(128, 128, 128);
+    filter:drop-shadow(0px 0px 15px #696969);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:active {
+    background-color: rgb(100, 104, 107);
+    transition: 0.1s;
+}
+
+.smlBtn , .actionBtn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(49, 49, 49);
+    width: 200pt;
+    height: 50pt;
+    margin: 8pt;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.smlBtn:hover , .actionBtn:hover{
+    background-color: rgb(128, 128, 128);
+    filter:drop-shadow(0px 0px 15px #696969);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.smlBtn:active , .actionBtn:active {
+    background-color:rgb(94, 223, 255);
+    transition: 0.1s;
+}
+
+
+.btn img {
+    width: 130pt;
+}
+
+.btnContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+input {
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 255, 255);
+    width: 250pt;
+    height: 15pt;
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+input[type='file'] {
+    background-color: rgb(49, 49, 49);
+    color: #ffffff;
+    width: 250pt;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 7px;
+    border-radius: 5px;
+  }
+  input::file-selector-button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.responses{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 15pt;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+table{
+    background-color: rgb(0, 0, 0);
+    color: #e4e4e4;
+    border: 1px solid #4b4b4b;
+    font-size: 12px;
+}
+td {
+    height: 25px;
+    width: 350pt;
+}
+tbody tr:nth-child(odd) {
+    background-color: #272727;
+}
+
+
+@media (max-width: 600px) {
+    .btnContainer {
+        flex-direction: column;
+    }
+}
