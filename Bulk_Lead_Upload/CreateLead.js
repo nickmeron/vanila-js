@@ -21,8 +21,8 @@ export class Leads {
         this.organization = org;
     }
 
-    createLeads() {
-        this.json.forEach(object => {
+    async createLeads() {
+        this.json.forEach( async object => {
             if (this.organization == 'alvexo') {
                 url = `https://trader.alvexo.com/web-api/v3/lead/register-aff?bn_cmp=${this.camapginId}&t_cre=${object.utmCreative}&nt_utmcontent=${object.utmContent}`;
 
@@ -52,7 +52,7 @@ export class Leads {
                     redirect: 'follow'
                 };
 
-                fetch(url, reqmethod)
+               await fetch(url, reqmethod)
                 .then((response) => response)
                 .then((data) => {
                         createRow(object.email, "Completed");
@@ -104,7 +104,7 @@ export class Leads {
                     redirect: 'follow'
                 };
 
-                fetch(url, reqmethod)
+               await fetch(url, reqmethod)
                 .then((response) => response)
                 .then((data) => {
                     if (data.ok) {
